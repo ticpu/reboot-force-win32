@@ -1,20 +1,21 @@
 # reboot-force
 
-Emergency Windows shutdown utility using `NtSetSystemPowerState`.
+Emergency Windows reboot/shutdown utility using `NtSetSystemPowerState`.
 
 ## What it does
 
-Performs an immediate emergency shutdown equivalent to Ctrl+Click on the power button in Windows. This bypasses normal shutdown procedures and terminates the system immediately.
+Performs an immediate emergency reboot (or shutdown) equivalent to Ctrl+Click on the power button in Windows. This bypasses normal shutdown procedures and acts immediately.
 
 ## Usage
 
 Run from an elevated command prompt:
 
 ```cmd
-reboot-force.exe
+reboot-force.exe        # Emergency reboot (default)
+reboot-force.exe -s     # Emergency shutdown
 ```
 
-**Warning**: This will immediately shut down your system without saving any work or gracefully closing applications.
+**Warning**: This will immediately reboot/shutdown your system without saving any work or gracefully closing applications.
 
 ## Build
 
